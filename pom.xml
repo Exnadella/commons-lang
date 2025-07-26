@@ -88,7 +88,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-text</artifactId>
-      <version>1.12.0</version>
+      <version>1.14.0</version>
       <scope>provided</scope>
     </dependency>
 
@@ -435,18 +435,18 @@
                 <configuration>
                   <target>
                     <exec executable="svn">
-                      <arg line="checkout --depth immediates ${commons.scmPubUrl} ${commons.scmPubCheckoutDirectory}" />
+                      <arg line="checkout --depth immediates ${commons.scmPubUrl} ${commons.scmPubCheckoutDirectory}"/>
                     </exec>
 
                     <exec executable="svn">
-                      <arg line="update --set-depth exclude ${commons.scmPubCheckoutDirectory}/javadocs" />
+                      <arg line="update --set-depth exclude ${commons.scmPubCheckoutDirectory}/javadocs"/>
                     </exec>
 
                     <pathconvert pathsep=" " property="dirs">
-                      <dirset dir="${commons.scmPubCheckoutDirectory}" includes="*" />
+                      <dirset dir="${commons.scmPubCheckoutDirectory}" includes="*"/>
                     </pathconvert>
                     <exec executable="svn">
-                      <arg line="update --set-depth infinity ${dirs}" />
+                      <arg line="update --set-depth infinity ${dirs}"/>
                     </exec>
                   </target>
                 </configuration>
@@ -553,7 +553,7 @@
       <name>Henri Yandell</name>
       <id>bayard</id>
       <email>bayard@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -562,7 +562,7 @@
       <name>Steven Caswell</name>
       <id>scaswell</id>
       <email>stevencaswell@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -572,7 +572,7 @@
       <name>Robert Burrell Donkin</name>
       <id>rdonkin</id>
       <email>rdonkin@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -595,8 +595,8 @@
     <developer>
       <name>Fredrik Westermarck</name>
       <id>fredrik</id>
-      <email />
-      <organization />
+      <email/>
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
